@@ -4,23 +4,33 @@
 Get a straight forward report from running Lynis with suggestions dedicated to harden systems without verbosity. This short script is meant to ease the process of hardening systems by organizing important vulnerabilities in a single text file.
 
 ## Features
-- Full system audit with Lynis
-- Runs through the report to find "warnings" and "suggestions"
-- Outputs the results to (lynis-review.txt (~))
-- No need to delete (lynis-review.txt) after as it will update each time you run the Lynis scan
+- Scans output from Lynis and organizes a report with Warnings and Suggestions for system hardening.
+- Outputs the results to (lynis-review.txt (~)).
+- No need to delete (lynis-review.txt) after as it will update each time you run the Lynis scan.
 
-## Usage
-Lynis audit tool is needed
+## Lynis audit tool installation
+
+#### Debian
 ```bash
 sudo apt update
 sudo apt install lynis
 ```
+#### Fedora
+```bash
+sudo dnf install lynis
+```
+#### Arch
+```bash
+sudo pacman -S lynis
+```
+## Usage:
 Run Command (Default File Path (~))
 ```bash
 ./lynis.sh
 ```
 After running, a (lynis-review.txt) file will be created and open automatically after the report generates.
 ## Note:
+- This script requires Lynis System Audit.
 - This script requires sudo privileges.
-- keep in mind if you wanted to view more information about your system refer back to the terminal to view Lynis's output unfiltered.
+- View Lynis commands for verbosity
 
