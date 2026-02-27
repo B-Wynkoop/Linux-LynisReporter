@@ -32,5 +32,4 @@ After running, a (lynis-review.txt) file will be created and open automatically 
 ## Note:
 - This script requires Lynis System Audit.
 - This script requires sudo privileges.
-- View Lynis commands for verbosity
 
