@@ -19,7 +19,7 @@ Run Command (Default File Path (~))
 ```bash
 ./lynis.sh
 ```
-After running, a lynis-review.txt file will be created and open automatically after the report generates.
+After running, a (lynis-review.txt) file will be created and open automatically after the report generates.
 ## Note:
 - This script requires sudo privileges.
 - keep in mind if you wanted to view more information about your system refer back to the terminal to view Lynis's output unfiltered.
